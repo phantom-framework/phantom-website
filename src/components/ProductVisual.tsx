@@ -11,17 +11,17 @@ const productImages = [
   {
     src: "/assets/product/phantom-icmp-udc2.png",
     alt: "User-Defined C2 Channel - ICMP",
-    label: "User-Defined C2 Channel via ICMP Echo",
+    label: "Hot-load User-Defined C2 Channel module at Beacon runtime",
   },
   {
     src: "/assets/product/phantom-vm.png",
     alt: "RISC-V VM Execution",
-    label: "Bring Your Own Execution Environment",
+    label: "Bytecode VM Execution",
   },
   {
     src: "/assets/product/phantom-audit.png",
     alt: "Audit Trail",
-    label: "Tamper Evident Audit Trail",
+    label: "Export Tamper Evident Audit Trail",
   },
 ];
 
