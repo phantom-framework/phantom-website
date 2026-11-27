@@ -23,6 +23,11 @@ const productImages = [
     alt: "RISC-V VM Execution",
     label: "Bytecode VM Execution",
   },
+  { 
+    src: "/assets/product/phantom-sc.png",
+    alt: "Clean Stack Spoofing",
+    label: "Clean Call Stack Spoofing",
+  },
   {
     src: "/assets/product/phantom-audit.png",
     alt: "Audit Trail",
