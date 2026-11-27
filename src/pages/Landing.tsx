@@ -55,7 +55,7 @@ export default function Landing() {
             <div className="relative max-w-[650px]">
               <p className="flex items-center gap-2 text-[11px] font-mono text-muted-foreground mb-7"><span className="h-1.5 w-1.5 bg-primary" /> INDEPENDENTLY DEVELOPED. PURPOSE-BUILT.</p>
               <p className="mb-5 text-[15px] font-semibold uppercase">Phantom <span className="text-primary">C2</span></p>
-              <h1 className="hero-title">Advanced Offensive Security.<br /><span className="text-muted-foreground">Built for the Teams<br className="hidden sm:block" /> That Need It.</span></h1>
+              <h1 className="hero-title">Adversarial Emulation Framework.<br /><span className="text-muted-foreground">Built for the Teams<br className="hidden sm:block" /> That Need It.</span></h1>
               <p className="mt-7 text-[15px] leading-[1.8] max-w-[490px] text-muted-foreground">Access to advanced red team infrastructure should not be determined by geography. Phantom C2 helps security teams across the Global South strengthen their offensive security capabilities through purpose-built command-and-control technology.</p>
               <div className="pointer-events-auto mt-8 flex flex-wrap items-center gap-4"><AccessButton /><Button asChild variant="ghost" className="h-11 px-2 text-[13px] group"><a href="#introducing">Explore Phantom<ArrowRight className="group-hover:translate-x-1 transition-transform" /></a></Button></div>
               <p className="mt-6 text-[11px] text-muted-foreground">A Hercules Suite product. <span className="mx-2 text-border">/</span> For authorised security operations.</p>
