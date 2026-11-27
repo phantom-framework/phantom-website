@@ -5,9 +5,17 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { PhantomBrand } from "@/components/PhantomBrand";
 import { ProductVisual } from "@/components/ProductVisual";
 import { accessRequestHref, capabilities, siteConfig } from "@/lib/site-config";
+import { CapabilityComparison } from "@/components/CapabilityComparison";
 
 const Logo3D = lazy(() => import("@/components/Logo3D").then(m => ({ default: m.Logo3D })));
-const navigation = [{ label: "Overview", id: "overview" }, { label: "Capabilities", id: "capabilities" }, { label: "Why Phantom", id: "why-phantom" }, { label: "Security", id: "security" }, { label: "About Hercules", id: "hercules" }];
+const navigation = [
+  { label: "Overview", id: "overview" },
+  { label: "Capabilities", id: "capabilities" },
+  { label: "Comparison", id: "comparison" },
+  { label: "Why Phantom", id: "why-phantom" },
+  { label: "Security", id: "security" },
+  { label: "About Hercules", id: "hercules" }
+];
 const icons = [Users, Layers3, Network, Crosshair, Activity, LockKeyhole];
 
 function AccessButton({ outline = false, children = "Request Access" }: { outline?: boolean; children?: ReactNode }) {
@@ -72,6 +80,8 @@ export default function Landing() {
         <section id="capabilities" className="section-space border-b border-border">
           <div className="site-container"><Eyebrow number="03">Capabilities</Eyebrow><div className="flex flex-col md:flex-row justify-between gap-6 md:items-end"><h2 className="section-title">An operational foundation.</h2><p className="max-w-[330px] text-[12px] text-muted-foreground leading-relaxed">Capability areas below are provisional.<br />Technical details will be published as confirmed.</p></div><div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border rounded-md overflow-hidden">{capabilities.map((item, i) => { const Icon = icons[i]; return <article key={item.id} className="capability-cell bg-background p-7 sm:p-8 group transition-colors hover:bg-card"><div className="flex items-center justify-between mb-10"><Icon className={`h-6 w-6 ${i % 3 === 1 ? "text-info" : "text-primary"}`} strokeWidth={1.25} /><span className="text-[10px] font-mono text-muted-foreground">0{i + 1}</span></div><h3 className="text-[15px] font-medium leading-relaxed max-w-[250px]">{item.title}</h3><p className="mt-3 text-[13px] text-muted-foreground leading-relaxed">{item.description}</p><p className="mt-7 text-[10px] font-mono uppercase text-muted-foreground flex items-center gap-2"><span className="h-1 w-1 bg-muted-foreground" />Details forthcoming</p></article>; })}</div></div>
         </section>
+
+	<CapabilityComparison />
 
         <section id="why-phantom" className="section-space border-b border-border hatch-band">
           <div className="site-container"><Eyebrow number="04">Why Phantom</Eyebrow><h2 className="section-title max-w-[600px]">Closing the Access Gap.<br /><span className="text-muted-foreground">Expanding Offensive Security.</span></h2><div className="mt-12 grid md:grid-cols-2 gap-x-16 gap-y-8">{[{ title: "Access, not geography.", desc: "Addressing the barriers faced by legitimate security teams in underserved markets." }, { title: "Independently developed.", desc: "Built by Hercules Suite, rather than depending on access to restricted commercial products." }, { title: "A regional perspective.", desc: "Developed with the needs of practitioners across Africa and the wider Global South in mind." }, { title: "Professional by purpose.", desc: "Intended for authorised security assessments, adversary emulation and red team engagements." }].map((reason, i) => <div key={reason.title} className="border-t border-border pt-6 flex gap-5"><span className="text-[11px] font-mono text-primary mt-1">0{i + 1}</span><div><h3 className="text-[16px] mb-3">{reason.title}</h3><p className="text-[13px] text-muted-foreground leading-[1.8] max-w-[400px]">{reason.desc}</p></div></div>)}</div></div>
