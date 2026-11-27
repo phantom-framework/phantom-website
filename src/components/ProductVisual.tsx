@@ -9,9 +9,9 @@ const productImages = [
     label: "Dashboard Overview",
   },
   {
-    src: "/assets/product/phantom-process.png",
-    alt: "Explore interface",
-    label: "Sessions",
+    src: "/assets/product/phantom-icmp-udc2.png",
+    alt: "User-Defined C2 Channel - ICMP",
+    label: "User-Defined C2 Channel via ICMP Echo",
   },
   {
     src: "/assets/product/phantom-vm.png",
