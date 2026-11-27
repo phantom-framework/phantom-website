@@ -13,6 +13,11 @@ const productImages = [
     alt: "User-Defined C2 Channel - ICMP",
     label: "Hot-load User-Defined C2 Channel module at Beacon runtime",
   },
+  { 
+    src: "/assets/product/phantom-process.png",
+    alt: "Process Overview",
+    label: "Process View",
+  },
   {
     src: "/assets/product/phantom-vm.png",
     alt: "RISC-V VM Execution",
