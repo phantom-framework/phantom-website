@@ -41,6 +41,17 @@ const comparisons = [
       "Custom transports usually require modifying the implant or framework source and rebuilding. New protocols typically mean a new listener, a schema change, or a fork of the C2 chain, and live agents cannot switch transport without redeployment.",
     ],
   },
+{
+  capability: "RUNTIME RELAY LISTENER & PROFILE SWITCHING",
+  phantom: [
+    "Operators can switch between preconfigured relay and listener profiles at runtime without rebuilding the agent.",
+    "Provides operational flexibility when changing communication configurations during an authorised engagement.",
+    "Allows profile management to adapt to different assessment environments without requiring a new agent build for every configuration change.",
+  ],
+  other: [
+    "In frameworks without runtime profile switching, changing communication configurations may require generating a new agent, updating its configuration, or redeploying it.",
+  ],
+},
   {
     capability: "CDN DOMAIN FRONTING",
     phantom: [
