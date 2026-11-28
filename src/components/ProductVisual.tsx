@@ -100,7 +100,7 @@ export function ProductVisual() {
 
       <figcaption className="flex items-center justify-between border-t border-border px-5 py-3 text-[11px] text-muted-foreground">
         <span>{image.label}</span>
-        <span>Phantom C2 · Product Interface</span>
+        <span>Product Interface</span>
       </figcaption>
 
     </figure>
