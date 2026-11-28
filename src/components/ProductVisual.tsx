@@ -2,31 +2,37 @@
 import { useState } from "react";
 import { siteConfig } from "@/lib/site-config";
 
+
 const productImages = [
   {
     src: siteConfig.assets.dashboardOverview || "/assets/product/phantom-dashboard.png",
-    alt: "Dashboard overview",
-    label: "Dashboard Overview",
+    alt: "Phantom C2 dashboard overview",
+    label: "Centralised Operations Dashboard",
+  },
+  {
+    src: "/assets/product/phantom-udc2-channel2.png",
+    alt: "User-Defined C2 Channel implementation",
+    label: "Extensible User-Defined C2 Channels: Implement custom communication channels using operator-developed COFF objects on Windows or ELF objects on Linux, built against Phantom's User-Defined C2 ABI.",
   },
   {
     src: "/assets/product/phantom-icmp-udc2.png",
-    alt: "User-Defined C2 Channel - ICMP",
-    label: "Hot-load User-Defined C2 Channel module at Beacon runtime",
+    alt: "Runtime loading of a custom ICMP C2 channel",
+    label: "Runtime C2 Channel Extension: Load User-Defined C2 channel implementations through BOF or ELF modules at Beacon runtime, extending communication capabilities without requiring a complete agent rebuild.",
   },
   {
     src: "/assets/product/phantom-vm.png",
-    alt: "RISC-V VM Execution",
-    label: "Bytecode VM Execution",
+    alt: "RISC-V bytecode virtual machine execution",
+    label: "RISC-V Bytecode Virtual Machine: Execute supported bytecode through an integrated virtual machine, providing an additional execution environment for supported operations.",
   },
-  { 
+  {
     src: "/assets/product/phantom-sc.png",
-    alt: "Clean Stack Spoofing",
-    label: "Clean Call Stack Spoofing",
+    alt: "Clean call stack spoofing",
+    label: "Clean Call Stack Spoofing: Apply stack spoofing techniques to reduce the visibility of identifiable call-chain patterns during supported operations.",
   },
   {
     src: "/assets/product/phantom-audit.png",
-    alt: "Audit Trail",
-    label: "Export Tamper Evident Audit Trail",
+    alt: "Tamper-evident audit trail",
+    label: "Tamper-Evident Audit Trails: Export structured audit records that help preserve operational accountability, support activity reviews, and provide evidence for security assessments.",
   },
 ];
 
