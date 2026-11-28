@@ -28,6 +28,11 @@ const productImages = [
     alt: "Clean Stack Spoofing",
     label: "Clean Call Stack Spoofing",
   },
+  { 
+    src: "/assets/product/phantom-lateral-movement2.png",
+    alt: "Lateral Movement",
+    label: "Pivoting",
+  },
   {
     src: "/assets/product/phantom-audit.png",
     alt: "Audit Trail",
